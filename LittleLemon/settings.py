@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     # --------------------------------
     "django.contrib.staticfiles",  # these are the static files
     # --------------------------------
-    "reservation",  # Custom app for reservations
     "restaurant",
 ]
 
