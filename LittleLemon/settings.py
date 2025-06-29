@@ -79,7 +79,20 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
-    }
+    },
+    "littlelemon": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "littlelemonrestaurant",
+        # ----------------------------------
+        "HOST": "localhost",
+        "PORT": "3306",
+        # ----------------------------------
+        "USER": "root",
+        "PASSWORD": "password",
+        "OPTIONS": {
+            "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
+        },
+    },
 }
 
 
