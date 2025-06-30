@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",  # these are the static files
     # --------------------------------
     "restaurant",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
