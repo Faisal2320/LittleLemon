@@ -21,17 +21,17 @@ from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth.models import User
 
 from .models import Booking, MenuItem
-from .serializers import BookingSerializer, MenuSerializer, UserSerializer
+from .serializers import BookingSerializer, MenuItemSerializer, UserSerializer
 
 
 class MenuItemsView(ListCreateAPIView):
     queryset = MenuItem.objects.all()
-    serializer_class = MenuSerializer
+    serializer_class = MenuItemSerializer
 
 
 class SingleMenuItemView(RetrieveUpdateAPIView, DestroyAPIView):
     queryset = MenuItem.objects.all()
-    serializer_class = MenuSerializer
+    serializer_class = MenuItemSerializer
 
 
 class BookingViewSet(ModelViewSet):

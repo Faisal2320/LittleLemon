@@ -9,7 +9,7 @@ class BookingSerializer(ModelSerializer):
         fields = ["id", "name", "no_of_guests", "booking_date"]
 
 
-class MenuSerializer(ModelSerializer):
+class MenuItemSerializer(ModelSerializer):
     class Meta:
         model = MenuItem
         fields = ["id", "title", "price", "inventory"]
